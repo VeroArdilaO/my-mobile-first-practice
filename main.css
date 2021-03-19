@@ -11,22 +11,17 @@ body {
 
 /* Estilos para todo lo relacionado con el header*/
 
-header {
-    width: 100%;
-    height: 70px;
-    background-color:white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:100;
-}
-
 .contenedor {
     width: 100%;
     margin:auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1;
 }
 
 .contenedor img{
@@ -61,7 +56,7 @@ header label {
     height: 100vh;
     background: rgba(196, 106, 106, 0.9);
     transition: all 0.7s;
-    transform:translateX(-100%)
+    transform:translateX(-100%);
 }
 
 .menu a {
@@ -85,12 +80,9 @@ header label {
 
 /* Estilos para todo lo relacionado con el main, seccion principal*/
 
-section {
+#principal {
     width: 100%;
     margin-bottom: 25px;
-}
-
-#principal {
     margin-top: 50px;
     position: relative;
 }
@@ -138,15 +130,15 @@ section {
     background-color:rgba(51, 51, 51, 0.9);
 }
 
-/*Estilos para todo lo relacionado con seccion articulos*/
+/*Estilos para todo lo relacionado con secciones*/
 
-#articulos .contenedor2 {
+#secciones .contenedor2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#articulos article {
+#secciones section {
     margin: 15px;
     display: flex;
     justify-content:center;
@@ -154,19 +146,19 @@ section {
 
 }
 
-#articulos h3 {
+#secciones h3 {
     text-align: center;
     font-weight: 2;
 }
 
-#articulos img {
+#secciones img {
     width: 100%;
     max-width: 100px;
     align-self: center;
     
 }
 
-#articulos h4 {
+#secciones h4 {
     font-weight: 2;
     margin-top: 10px;
     padding-top: 10px;
@@ -203,8 +195,13 @@ hr {
     margin-bottom: 10px;
 }
 
+.sociales a {
+    padding: 15px;
+}
+
 #footer small > p {
     text-align: center;
 }
+
 
 
